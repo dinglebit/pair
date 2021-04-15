@@ -20,7 +20,7 @@ fn main() {
         let mut rng = thread_rng();
         pairs.shuffle(&mut rng);
 
-        // print out the pairs.
+        // verify that no line has an identical pair
         same = false;
         for (x, name) in lines.iter().enumerate() {
             if *name == pairs[x] {
